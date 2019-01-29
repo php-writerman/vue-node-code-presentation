@@ -1,0 +1,14 @@
+work_db:
+  container_name: work_db
+  image: mysql:5.7
+  volumes:
+    - ./mysql:/var/lib/mysql
+    - ./scripts:/var/lib/scripts
+  command: --init-file /var/lib/scripts/init.sql
+  ports:
+    - 3307:3306
+  environment:
+    MYSQL_ROOT_PASSWORD: root
+    MYSQL_DATABASE: db
+    MYSQL_USER: root
+    MYSQL_PASSWORD: root

@@ -1,0 +1,134 @@
+// change style of CtkDateTimePicker
+.time-picker {
+  .datetimepicker .datepicker-buttons-container {
+    display: none !important;
+    @media screen and (max-width: 415px) {
+      display: block !important;
+      .datepicker-button {
+        margin-left: auto;
+        margin-top: 20px;
+      }
+      svg {
+        opacity: 1!important;
+      }
+    }
+  }
+  .ctk-date-time-picker {
+    .field {
+      .field-input {
+        height: 48px;
+        border: 1px solid rgba(0, 0, 0, .2) !important;
+      }
+
+      &.has-value {
+        .field-label {
+          display: none;
+        }
+
+        .field-input {
+          padding-top: 0;
+        }
+      }
+    }
+
+    .datepicker-container-label .justify-content-center {
+      justify-content: left !important;
+      padding-left: 11px;
+    }
+
+    .datepicker-day-text {
+      color: #000 !important;
+    }
+
+    .datepicker-button {
+      position: relative;
+
+      svg {
+        opacity: 0;
+      }
+
+      &.datepicker-prev {
+        &:before {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          transform: translate(0, -50%) rotate(135deg);
+          height: 9.17px;
+          width: 9.17px;
+          background-color: #31393C;
+        }
+
+        &:after {
+          content: "";
+          right: 4px;
+          top: 50%;
+          position: absolute;
+          display: inline-block;
+          width: 10px;
+          height: 14px;
+          background: #fff;
+          transform: translate(0, -50%);
+        }
+      }
+
+      &.datepicker-next {
+        &:before {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          left: 10px;
+          top: 50%;
+          transform: translate(0, -50%) rotate(135deg);
+          height: 9.17px;
+          width: 9.17px;
+          background-color: #31393C;
+        }
+
+        &:after {
+          content: "";
+          left: 5px;
+          top: 50%;
+          position: absolute;
+          display: inline-block;
+          width: 10px;
+          height: 14px;
+          background: #fff;
+          transform: translate(0, -50%);
+        }
+      }
+    }
+  }
+
+  .datetimepicker .datepicker {
+    margin: 10px 0;
+  }
+
+  .icon-calendar {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -7px;
+    cursor: pointer;
+  }
+}
+
+.drafts-img {
+  padding: 7px;
+  border: 1px solid #1f96ff;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+// change style of select
+
+.wrapper-select {
+  position: relative;
+  select.custom-select-dop {
+    appearance: none;
+    background-size: 11px;
+    background: #fff url('./assets/img/svg/dropdown_arrow.svg') no-repeat right 20px center;
+  }
+}

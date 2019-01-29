@@ -1,0 +1,10 @@
+node_modules
+public
+views
+.idea
+files
+docker/mysql
+storage/uploads
+!storage/uploads/.gitkeep
+logs
+dist

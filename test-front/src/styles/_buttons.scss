@@ -1,0 +1,58 @@
+.btn {
+  transition: all 0.15s ease-in-out;
+  border-radius: 0.3rem;
+    &-blue {
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 38px;
+    text-align: center;
+    background-color: #1F96FF;
+    border-color: #1F96FF;
+    width: 100%;
+    height: 48px;
+    &:hover,
+    &:focus {
+      color: #1F96FF;
+      background-color: #fff;
+    }
+  }
+  &-remove {
+    background: none;
+    border: none;
+    padding: 0;
+    height: 30px;
+    &:hover, &:active, &:focus {
+      outline: none;
+      i {
+        background: #1f96ff;
+        transition: all 0.3s;
+        &:before {
+          color: #fff;
+          transition: all 0.3s;
+        }
+      }
+    }
+  }
+  &[disabled="disabled"] {
+    cursor: no-drop;
+  }
+  &:focus,
+  &:active:focus,
+  &.active:focus,
+  &.focus,
+  &:active.focus,
+  &.active.focus {
+    outline: thin dotted;
+    outline-offset: none;
+  }
+  &:active,
+  &.active,
+  &.focus,
+  &:focus {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}

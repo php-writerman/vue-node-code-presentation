@@ -1,0 +1,132 @@
+.wrapper-page {
+  min-height: 100vh;
+  background-size: cover;
+  @media (max-width: 767px) {
+    background: none;
+  }
+  &__bg {
+    @media (max-width: 767px) {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      z-index: 0;
+    }
+  }
+}
+.header-first-type {
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  z-index: 40;
+  @media (max-width: 767px) {
+    padding: 15px 0;
+  }
+}
+.login-content {
+  padding-top: 60px;
+  position: relative;
+  z-index: 1;
+  @media (max-width: 575px) {
+    padding-top: 0;
+  }
+}
+.inner-footer {
+  bottom: 0;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 35px;
+  background: #F1F1F1;
+  @media (max-width: 767px) {
+    justify-content: center;
+    padding: 0;
+  }
+  @media (max-width: 575px) {
+    height: 54px;
+  }
+  .nav-item {
+    .nav-link {
+      color: #2297FF;
+      font-size: 11px;
+      font-weight: 600;
+      line-height: 20px;
+      @media (max-width: 575px) {
+        padding: 0.2rem 1rem;
+      }
+    }
+  }
+}
+.copyright {
+  color: #9798A2;
+  padding-left: 0;
+  @media (max-width: 767px) {
+    padding-left: 1rem;
+  }
+}
+.navbar-brand-l {
+  color: #0E0F18;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 23px;
+  padding-left: 0.5rem;
+}
+.login-section {
+  @media (max-width: 767px) {
+    display: block;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @media (max-width: 575px) {
+      padding-top: 20px;
+      padding-bottom: 25px;
+    }
+  }
+}
+.wrapper-login-block {
+  transition: all 0.3s;
+  max-width: 547px;
+  width: 100%;
+  margin: 40px auto;
+}
+.title-block {
+  color: #7C7C7C;
+  font-size: 44px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 55px;
+  margin-bottom: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.login-block {
+  padding: 52px 72px 45px 72px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+  @media (max-width: 767px) {
+    padding: 32px 32px 25px 32px;
+  }
+  @media (max-width: 479px) {
+    padding: 20px 18px 20px 18px;
+  }
+}
+.custom-checkbox-dop {
+  padding-left: 24px;
+}
+.custom-control-label {
+  letter-spacing: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #36363F;
+  padding-left: 10px;
+  @media (max-width: 479px) {
+    font-size: 14px;
+  }
+}
+.label-l {
+  color: #37394E;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+
